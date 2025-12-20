@@ -1,0 +1,32 @@
+#!/bin/zsh
+
+# Completions
+mattmc3/ez-compinit
+zsh-users/zsh-completions kind:fpath path:src
+# aloxaf/fzf-tab  # Remove if you don't use fzf
+
+# Completion styles
+belak/zsh-utils path:completion/functions kind:autoload post:compstyle_zshzoo_setup
+
+# Keybindings
+# belak/zsh-utils path:editor
+
+# History
+belak/zsh-utils path:history
+
+# prompt
+# moarram/headline kind:clone
+romkatv/powerlevel10k
+
+# Utilities
+# belak/zsh-utils path:utility
+# romkatv/zsh-bench kind:path
+# ohmyzsh/ohmyzsh path:plugins/extract
+
+# Other Fish-like features
+zdharma-continuum/fast-syntax-highlighting  # Syntax highlighting
+zsh-users/zsh-autosuggestions               # Auto-suggestions
+zsh-users/zsh-history-substring-search      # Up/Down to search history
+
+# vi mode
+jeffreytse/zsh-vi-mode
