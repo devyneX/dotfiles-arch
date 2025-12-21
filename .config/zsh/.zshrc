@@ -9,13 +9,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# antidote
-zstyle ':antidote:bundle' use-friendly-names 'yes'
-source '/usr/share/zsh-antidote/antidote.zsh'
-antidote load
-
-# bindings
-
 # vi mode
 bindkey -v
 function zvm_config() {
@@ -26,6 +19,13 @@ function zvm_config() {
   ZVM_CLIPBOARD_COPY_CMD=wl-copy
   ZVM_CLIPBOARD_PASTE_CMD=wl-paste
 }
+
+# antidote
+zstyle ':antidote:bundle' use-friendly-names 'yes'
+source '/usr/share/zsh-antidote/antidote.zsh'
+antidote load
+
+# bindings
 
 # auto-suggestions
 bindkey "^Y" autosuggest-execute
