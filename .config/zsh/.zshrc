@@ -49,7 +49,7 @@ path=($CARGO_HOME/bin $path)
 path=($GOPATH/bin $path)
 
 # js
-source '/usr/share/nvm/init-nvm.sh'
+source $ZDOTDIR/lazyload_nvm.zsh
 
 # aliases
 source $ZDOTDIR/.zsh_aliases.zsh
