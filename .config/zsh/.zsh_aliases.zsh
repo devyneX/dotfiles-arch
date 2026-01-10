@@ -25,9 +25,9 @@ alias ewwconf='cd $XDG_CONFIG_HOME/eww/ && nvim .'
 alias neofetch=fastfetch
 
 # ollama
-alias ollama-start='systemctl start ollama'
-alias ollama-status='systemctl status ollama'
-alias ollama-stop='systemctl stop ollama'
+alias ollama-start='systemctl --user start ollama'
+alias ollama-status='systemctl --user status ollama'
+alias ollama-stop='systemctl --user stop ollama'
 
 # nvim
 alias nv=nvim

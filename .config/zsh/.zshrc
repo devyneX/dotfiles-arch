@@ -38,7 +38,7 @@ bindkey "^P" history-substring-search-down
 
 # cd with just the location without cd
 setopt autocd
-setopt cdablevars
+# setopt cdablevars
 
 # PATH
 typeset -U path PATH
