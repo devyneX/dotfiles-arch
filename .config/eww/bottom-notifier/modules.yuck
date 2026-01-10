@@ -1,0 +1,3 @@
+(defvar notifier-value "")
+(defvar notifier-icon-path "")
+

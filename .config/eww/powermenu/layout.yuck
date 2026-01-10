@@ -1,0 +1,10 @@
+(defwidget powermenu-layout []
+  (box :class "powermenu-container" :orientation "h"
+    (powermenu-button :cls "btn-shutdown" :function "systemctl poweroff -i" :icon "./powermenu/icons/shutdown.svg")
+    (powermenu-button :cls "btn-reboot" :function "systemctl reboot" :icon "./powermenu/icons/reboot.svg")
+    (powermenu-button :cls "btn-lock" :function "(uwsm app -- hyprlock &)" :icon "./powermenu/icons/lock.svg")
+    (powermenu-button :cls "btn-sleep" :function "systemctl suspend" :icon "./powermenu/icons/sleep.svg")
+    (powermenu-button :cls "btn-hibernate" :function "systemctl hibernate" :icon "./powermenu/icons/hibernate.svg")
+    (powermenu-button :cls "btn-logout" :function "uwsm stop" :icon "./powermenu/icons/logout.svg")
+  )
+)

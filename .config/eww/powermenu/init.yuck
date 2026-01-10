@@ -1,0 +1,8 @@
+(defwindow powermenu
+  :monitor 0
+  :geometry (geometry :anchor "center")
+  :stacking "fg"
+  :exclusive false
+  :focusable true
+  (powermenu-layout)
+)

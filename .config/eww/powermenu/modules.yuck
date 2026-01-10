@@ -1,0 +1,5 @@
+(defwidget powermenu-button [cls function icon] 
+  (button :class "btn ${cls}" :onclick "${function} && eww close powermenu"
+    (image :path "${icon}")
+  )
+)

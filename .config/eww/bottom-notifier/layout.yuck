@@ -1,0 +1,7 @@
+(defwidget notifier-layout [value icon-path]
+  (box :orientation "vertical" :class "notifier-layout"
+    (image :path icon-path :class "notifier-icon")
+    (progress :height 0 :value value :class "notifier-bar")
+    (label :text "${value}%" :class "notfier-label")
+  )
+)

@@ -1,0 +1,9 @@
+;; powermenu
+(include "./powermenu/modules.yuck")
+(include "./powermenu/layout.yuck")
+(include "./powermenu/init.yuck")
+
+;; bottom-notifier
+(include "./bottom-notifier/modules.yuck")
+(include "./bottom-notifier/layout.yuck")
+(include "./bottom-notifier/init.yuck")

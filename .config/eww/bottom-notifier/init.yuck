@@ -1,0 +1,7 @@
+(defwindow bottom-notifier
+  :monitor 0
+  :geometry (geometry :y 30 :width 150 :anchor "bottom center")
+  :stacking "overlay"
+  :exclusive false
+  (notifier-layout :value notifier-value :icon-path notifier-icon-path)
+)

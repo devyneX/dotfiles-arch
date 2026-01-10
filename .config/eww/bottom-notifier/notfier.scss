@@ -1,0 +1,19 @@
+* {
+  color: $text;
+}
+
+.bottom-notifier {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.notifier-layout {
+  border-radius: 10px;
+  background-color: rgba($crust, 0.8);
+  padding: 10px;
+}
+
+.notifier-label {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
