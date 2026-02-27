@@ -28,7 +28,7 @@ antidote load
 # bindings
 
 # auto-suggestions
-bindkey "^Y" autosuggest-execute
+bindkey "^Y" autosuggest-accept
 
 # substring-history-search
 bindkey "^N" history-substring-search-up

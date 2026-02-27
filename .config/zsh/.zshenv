@@ -4,27 +4,30 @@ export VISUAL=nvim
 export SYSTEMD_EDITOR=nvim
 
 # dev
-export dev=$HOME/Documents/Dev/
+export dev="$HOME"/Documents/Dev/
+
+# minikube
+export MINIKUBE_HOME="$XDG_DATA_HOME"/minikube 
 
 # python
-export PYTHON_HISTORY=$XDG_STATE_HOME/python_history
+export PYTHON_HISTORY="$XDG_STATE_HOME"/python_history
 
 # rust
-export RUSTUP_HOME=$XDG_DATA_HOME/rustup
-export CARGO_HOME=$XDG_DATA_HOME/cargo
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
 
 # go
-export GOPATH=$XDG_DATA_HOME/go
-export GOMODCACHE=$XDG_CACHE_HOME/go/mod
+export GOPATH="$XDG_DATA_HOME"/go
+export GOMODCACHE="$XDG_CACHE_HOME"/go/mod
 
 # nvm 
-export NVM_DIR=$XDG_DATA_HOME/nvm
+export NVM_DIR="$XDG_DATA_HOME"/nvm
 
 # npm
-export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 
 # sqlite
-export SQLITE_HISTORY=$XDG_STATE_HOME/sqlite_history
+export SQLITE_HISTORY="$XDG_STATE_HOME"/sqlite_history
 
 # ollama
-export OLLAMA_MODELS=$XDG_DATA_HOME/ollama/models
+export OLLAMA_MODELS="$XDG_DATA_HOME"/ollama/models

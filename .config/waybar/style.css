@@ -1,0 +1,174 @@
+@import "./colors/mocha.css";
+
+/* margin: top right bottom left */
+/* Spacing outside the element */
+
+/* padding: top right bottom left */
+/* Spacing inside the element */
+
+* {
+  font-family: FiraCode Nerd Font;
+  font-size: 16px;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: @text;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0px;
+  transition-duration: .5s;
+  margin: 0px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/* .modules-left, */
+/* .modules-center, */
+/* .modules-right { */
+/*   background-color: @crust; */
+/*   background-color: transparent; */
+/*   margin: 5px 10px 0px; */
+/*   padding: 0px 10px; */
+/*   border-radius: 20px; */
+/* } */
+
+#workspaces button {
+  color: @text;
+  background: @crust;
+  border-radius: 20px;
+  /* padding: 0px 8px 0px 8px; */
+  padding: 2px 7px;
+  margin: 6px;
+  margin: 6px 6px 0px 6px;
+  border: 1px solid @subtext1;
+}
+
+#workspaces button:hover {
+  background: @surface0;
+  color: @text;
+}
+
+#workspaces button.active {
+  color: @crust;
+  background: @overlay2;
+  border: none; 
+} 
+
+#custom-launcher,
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#wireplumber,
+#network,
+#bluetooth,
+#custom-powermenu,
+#custom-notifications{
+  /* padding: 0px 15px; */
+  padding: 0px 10px;
+  /* margin: 7px 0px 10px 0px; */
+  margin: 6px 0px 0px 0px;
+	border-radius: 20px;
+  /* color: @crust; */
+  color: @text;
+  background: @crust;
+}
+
+/* #window, */
+#cpu {
+  /* background-color: @mauve; */
+  border: 2px solid @mauve;
+  /* border: 1px solid @blue; */
+}
+
+#memory {
+  /* background-color: @lavender; */
+  border: 2px solid @lavender;
+  /* border: 1px solid @blue; */
+}
+
+#temperature{
+  /* background-color: @blue; */
+  border: 2px solid @blue;
+  /* border: 1px solid @blue; */
+}
+
+#backlight {
+  /* background-color: @sapphire; */
+  border: 2px solid @sapphire;
+  /* border: 1px solid @blue; */
+}
+
+#network {
+  /* background-color: @green; */
+  border: 2px solid @green;
+  /* border: 1px solid @blue; */
+}
+
+#bluetooth {
+  /* background-color: @teal; */
+  border: 2px solid @teal;
+  /* border: 1px solid @blue; */
+}
+
+#wireplumber {
+  /* background-color: @sky; */
+  border: 2px solid @sky;
+  /* border: 1px solid @blue; */
+}
+
+#battery {
+  /* background-color: @yellow; */
+  border: 2px solid @yellow;
+  /* border: 1px solid @blue; */
+}
+
+#clock {
+  /* background-color: @peach; */
+  border: 2px solid @peach;
+  /* border: 1px solid @blue; */
+}
+
+#custom-powermenu {
+  /* padding: 0px 25px 0px 20px; */
+  /* margin: 7px 20px 10px 0px; */
+  margin: 5px 10px 0px 0px;
+  padding: 0px 11px 0px 7px;
+  /* background-color: @maroon; */
+  border: 2px solid @maroon;
+  /* border: 1px solid @blue; */
+}
+
+#custom-notifications {
+  /* background-color: @flamingo; */
+  border: 2px solid @flamingo;
+  padding: 0px 10px 0px 7px;
+  /* border: 1px solid @blue; */
+}
+
+@keyframes blink {
+  to {
+    background-color: rgba(30, 34, 42, 0.5);
+    color: #abb2bf;
+  }
+}
+
+#battery.critical:not(.charging) {
+  color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+
